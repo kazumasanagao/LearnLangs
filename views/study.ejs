@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" contant="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/stylesheets/menu.css" />
+        <link rel="stylesheet" href="/stylesheets/study.css" />
+        <link rel="stylesheets" href="/stylesheets/study_pc.css" media="screen and (min-width:800px)" />
+    </head>
+    <body>
+        <div id="menuBar">
+            <a id="chample" href="/">Chample</a>
+            <a id="login" href="/login">ログイン</a>
+            <div id="menuButton"><img src="/images/menu.png" width="26" height="26" /></div>
+        </div>
+        <div id="menu">
+            <div class="menuEach" id="userinfo">ユーザー情報</div>
+            <div class="menuEach" id="changepass">パスワードの変更</div>
+            <div class="menuEach" id="logout">ログアウト</div>
+        </div>
+
+        <h1>学ぶ・講師を検索する</h1>
+
+        <div class="options">
+            <span>学びたい言語</span>
+            <select id="language_select" class="selections" name="language"></select>
+        </div>
+
+        <div class="options">
+            <span>日にち</span>
+            <select id="date_select" class="selections" name="date"></select>
+        </div>
+
+        <p id='openOptions'>+ 詳細オプション</p>
+
+        <div id ='extraOptions'>
+        <div class="options">
+            <span>時間</span>
+            <select id="time_select1" class="selections2" name="time" style="margin-left: 10px;"></select> ~ 
+            <select id="time_select2" class="selections2" name="time"></select>
+        </div>
+
+        <div class="options">
+            <span>性別</span>
+            <input type="radio" name="gender" id="nogender" value="" checked="checked"><label for="nogender" class="genderText">指定なし</label>
+            <input type="radio" name="gender" id="fe" value="fe"><label for="fe" class="genderText">女性</label>
+            <input type="radio" name="gender" id="ma" value="ma"><label for="ma" class="genderText">男性</label>
+        </div>
+
+        <div class="options">
+            <div id="regionsTitle">地域</div>
+            <div id="regionsSection">
+            <ul>
+                <li id="region_asia" class="regions" name="as">アジア</li>
+                <li id="region_euro" class="regions" name="eu">ヨーロッパ</li>
+            </ul>
+            <ul>
+                <li id="region_africa" class="regions" name="af">アフリカ</li>
+                <li  id="region_america" class="regions" name="na">北米</li>
+            </ul>
+            <ul>
+                <li id="region_middle" class="regions" name="me">中東</li>
+                <li  id="region_oceania" class="regions" name="oc">オセアニア</li>
+            </ul>
+            <ul>
+                <li id="region_latin" class="regions" name="lc">中南米</li>
+            </ul>
+            </div>
+        </div>
+
+        <div id="search">絞り込み検索</div>
+        </div><!-- extraOptions -->
+
+        <div class="pageBar"></div>
+
+        <section id="personsbar">
+        <ul>
+            <li id="personsbarblank"></li>
+            <li id="person1" class="persons">
+                <img class="personphotos" src="/images/nophoto.png" />
+                <div class="personnames">Kazu</div>
+                <div class="personcountries"><img src="/images/flags/al.png" /><span>Japon</span></div>
+            </li>
+            <li id="person2" class="persons">
+                <img class="personphotos" src="/images/nophoto.png" />
+                <div class="personnames">Cathy</div>
+                <div class="personcountries"><img src="/images/flags/ne.png" /><span>Netherland</span></div>
+            </li>
+            <li id="person3" class="persons">
+                <img class="personphotos" src="/images/nophoto.png" />
+                <div class="personnames">Jack</div>
+                <div class="personcountries"><img src="/images/flags/us.png" /><span>USA</span></div>
+            </li>
+        </ul>
+        </section>
+
+        <section id="timetable">
+            <ul id="time">
+                <li>0:00</li><li>0:30</li><li>1:00</li><li>1:30</li><li>2:00</li><li>2:30</li><li>3:00</li><li>3:30</li><li>4:00</li><li>4:30</li><li>5:00</li><li>5:30</li><li>6:00</li><li>6:30</li><li>7:00</li><li>7:30</li><li>8:00</li><li>8:30</li><li>9:00</li><li>9:30</li><li>10:00</li><li>10:30</li><li>11:00</li><li>11:30</li><li>12:00</li><li>12:30</li><li>13:00</li><li>13:30</li><li>14:00</li><li>14:30</li><li>15:00</li><li>15:30</li><li>16:00</li><li>16:30</li><li>17:00</li><li>17:30</li><li>18:00</li><li>18:30</li><li>19:00</li><li>19:30</li><li>20:00</li><li>20:30</li><li>21:00</li><li>21:30</li><li>22:00</li><li>22:30</li><li>23:00</li><li>23:30</li>
+            </ul>
+            <ul id="schedule1" class="timecolumn">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+            <ul id="schedule2" class="timecolumn">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+            <ul id="schedule3" class="timecolumn">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+        </section>
+
+        <div class="pageBar"></div>
+
+        <div id="confReserve">
+            <p id="reserveName"></p>
+            <p id="reserveLang"></p>
+            <p id="reserveDate"></p>
+            <p id="reserveTime"></p>
+            <p>このレッスンを予約しますか？</p>
+            <p id="confReserveAns"><span id="confReserveNo">いいえ</span><span id="confReserveYes">はい</span></p>
+        </div>
+
+        <div id="r_person1" style="display:none;"><%= person1 %></div>
+        <div id="r_person2" style="display:none;"><%= person2 %></div>
+        <div id="r_person3" style="display:none;"><%= person3 %></div>
+        <div id="r_restIds" style="display:none;"><%= restIds %></div>
+        <div id="r_ctime" style="display:none;"><%= ctime %></div>
+        <div id="r_lang" style="display:none;"><%= lang %></div>
+        <div id="r_requestDay" style="display:none;"><%= requestDay %></div>
+        <div id="r_isquarter" style="display:none;"><%= isquarter %></div>
+        <div id="r_from" style="display:none;"><%= from %></div>
+        <div id="r_to" style="display:none;"><%= to %></div>
+        <div id="r_gender" style="display:none;"><%= gender %></div>
+        <div id="r_regions" style="display:none;"><%= regions %></div>
+
+        <div id="toast"></div>
+        <div id="graylayer"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/javascripts/conf.js"></script>
+    <script src="/javascripts/menu.js"></script>
+    <script src="/javascripts/pulldowns.js"></script>
+    <script src="/javascripts/study.js"></script>
+    </body>
+</html>

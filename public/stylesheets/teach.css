@@ -1,0 +1,106 @@
+h1 {
+    margin: 15px 0 0 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.optionheads {
+    margin: 15px 0 0 10px;
+    font-size: 16px;
+}
+#youcanteach a {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #0070c9;
+}
+#teachlangs {
+    margin: 0 0 0 20px;
+    font-size: 15px;
+}
+#maxinaday_desc, #maxinall_desc {
+    color: #0070c9;
+    font-size: 13px;
+    margin-left: 10px;
+}
+#maxinaday_select, #maxinall_select {
+    border-radius: 3px;
+    font-size: 17px;
+    height: 25px;
+    line-height: 25px;
+    width: 50px;
+    border: gray 1px solid;
+    background: white;
+    margin-left: 10px;
+}
+#max_description {
+    display: none;
+    position: fixed;
+    top: 50px;
+    margin: 0 10px;
+    width: 280px;
+    padding: 10px;
+    background: white;
+    z-index: 2;
+}
+#max_description p {
+    margin-bottom: 10px;
+}
+
+#datebar {
+    height: 50px;
+    width: 100%;
+    top: 0;
+}
+#datebarblank {
+    float: left;
+    height: 50px;
+    width: 13%;
+    padding: 0 1%;
+}
+.eachdate {
+    box-sizing: border-box;
+    background: white;
+    width: 17%;
+    float: left;
+    text-align: center;
+}
+#timetable {
+    clear: both;
+}
+#time {
+    width: 13%;
+    float: left;
+    padding: 0 1%;
+}
+#time li {
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+.timecolumn {
+    box-sizing: border-box;
+    width: 17%;
+    float: left;
+    border-right: 1px solid white; 
+}
+.timecolumn li {
+    height: 39px;
+    border-bottom: 1px solid white;
+    background: #d3d3d3; /* teach.jsにも設定しているため、変更の際は両方を直す必要あり。 */
+}
+
+#sendButton {
+    clear: both;
+    height: 40px;
+    font-size: 18px;
+    width: 300px;
+    position: relative;
+    top: 25px;
+    margin: 0 0 25px 10px;
+    text-align: center;
+    background: #28b9e6;
+    color: white;
+    font-weight: 400;
+    line-height: 40px;
+    border-radius: 10px;
+    opacity: 0.8;
+}

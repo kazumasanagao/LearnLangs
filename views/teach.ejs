@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" contant="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/stylesheets/menu.css" />
+        <link rel="stylesheet" href="/stylesheets/teach.css" />
+        <link rel="stylesheets" href="/stylesheets/teach_pc.css" media="screen and (min-width:800px)" />
+    </head>
+    <body>
+        <div id="menuBar">
+            <a id="chample" href="/">Chample</a>
+            <a id="login" href="/login">ログイン</a>
+            <div id="menuButton"><img src="/images/menu.png" width="26" height="26" /></div>
+        </div>
+        <div id="menu">
+            <div class="menuEach" id="userinfo">ユーザー情報</div>
+            <div class="menuEach" id="changepass">パスワードの変更</div>
+            <div class="menuEach" id="logout">ログアウト</div>
+        </div>
+
+        <h1>教える・空き時間の登録</h1>
+
+        <p id="youcanteach" class="optionheads">教えられる言語<a href="/userinfo">変更</a></p>
+        <p id="teachlangs"></p>
+
+        <p class="optionheads"><span>一日の授業数の上限</span>
+        <select id="maxinaday_select" class="selections" name="maxinaday"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select><span id="maxinaday_desc">説明</span></p>
+
+        <p class="optionheads" style="margin-bottom:25px;"><span>全期間の授業数の上限</span>
+        <select id="maxinall_select" class="selections" name="maxinall"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option></select><span id="maxinall_desc">説明</span></p>
+
+        <div id="max_description"></div>
+
+        <section id="datebar">
+            <ul id="date">
+                <li id="datebarblank"></li>
+                <li class="eachdate"></li>
+                <li class="eachdate"></li>
+                <li class="eachdate"></li>
+                <li class="eachdate"></li>
+                <li class="eachdate"></li>
+            </ul>
+        </section>
+        <section id="timetable">
+            <ul id="time">
+                <li>0:00</li><li>0:30</li><li>1:00</li><li>1:30</li><li>2:00</li><li>2:30</li><li>3:00</li><li>3:30</li><li>4:00</li><li>4:30</li><li>5:00</li><li>5:30</li><li>6:00</li><li>6:30</li><li>7:00</li><li>7:30</li><li>8:00</li><li>8:30</li><li>9:00</li><li>9:30</li><li>10:00</li><li>10:30</li><li>11:00</li><li>11:30</li><li>12:00</li><li>12:30</li><li>13:00</li><li>13:30</li><li>14:00</li><li>14:30</li><li>15:00</li><li>15:30</li><li>16:00</li><li>16:30</li><li>17:00</li><li>17:30</li><li>18:00</li><li>18:30</li><li>19:00</li><li>19:30</li><li>20:00</li><li>20:30</li><li>21:00</li><li>21:30</li><li>22:00</li><li>22:30</li><li>23:00</li><li>23:30</li>
+            </ul>
+            <ul id="today" class="timecolumn">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+            <ul id="todayplus1" class="timecolumn">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+            <ul id="todayplus2" class="timecolumn">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+            <ul id="todayplus3" class="timecolumn">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+            <ul id="todayplus4" class="timecolumn">
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+
+        </section>
+
+        <div id="sendButton">更新する</div>
+
+        <div id="r_languages" style="display:none;"><%= langs %></div>
+        <div id="r_ctime" style="display:none;"><%= ctime %></div>
+        <div id="r_isquarter" style="display:none;"><%= isquarter %></div>
+        <div id="r_today" style="display:none;"><%= today %></div>
+        <div id="r_todayp1" style="display:none;"><%= todayp1 %></div>
+        <div id="r_todayp2" style="display:none;"><%= todayp2 %></div>
+        <div id="r_todayp3" style="display:none;"><%= todayp3 %></div>
+        <div id="r_todayp4" style="display:none;"><%= todayp4 %></div>
+        <div id="r_maxinaday" style="display:none;"><%= maxinaday %></div>
+        <div id="r_maxinall" style="display:none;"><%= maxinall %></div>
+        <div id="toast"></div>
+        <div id="graylayer"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/javascripts/conf.js"></script>
+    <script src="/javascripts/menu.js"></script>
+    <script src="/javascripts/teach.js"></script>
+    </body>
+</html>

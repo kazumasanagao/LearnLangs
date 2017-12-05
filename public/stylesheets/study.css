@@ -1,0 +1,207 @@
+h1 {
+    margin: 15px 0 15px 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.options {
+    margin: 0 0 17px 10px;
+}
+.selections {
+    margin-left:10px;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 30px;
+    line-height: 20px;
+    width: 150px;
+    border: gray 1px solid;
+    background: white;
+}
+.selections2 {
+    border-radius: 5px;
+    font-size: 18px;
+    height: 30px;
+    line-height: 20px;
+    width: 100px;
+    border: gray 1px solid;
+    background: white;
+}
+#regionsTitle {
+    float: left;   
+}
+#regionsSection {
+    float: left;
+}
+.regions {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 10px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    border: gray 1px solid;
+    background: white;
+}
+#nogender {
+    margin-left: 10px;
+}
+#search {
+    clear: both;
+    height: 40px;
+    font-size: 18px;
+    width: 300px;
+    margin: 0 0 15px 10px;
+    text-align: center;
+    background: #28b9e6;
+    color: white;
+    font-weight: 400;
+    line-height: 40px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+#extraOptions {
+    display: none;
+}
+#openOptions {
+    color: #0070c9;
+    font-size: 13px;
+    margin: 0 0 10px 10px;
+}
+
+#personsbar {
+    height: 135px;
+    width: 100%;
+    top: 0;
+}
+#personsbarblank {
+    float: left;
+    height: 135px;
+    width: 12%;
+    padding: 0 2%;
+}
+.persons {
+    box-sizing: border-box;
+    background: white;
+    width: 28%;
+    height: 135px;
+    float: left;
+    text-align: center;
+}
+.personphotos {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.personnames {
+    font-size: 13px;
+    margin-top: 5px;
+}
+.personcountries {
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+.personcountries img {
+    width: 18px;
+    height: 12px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+    vertical-align: middle;
+}
+.personcountries span {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+#timetable {
+    clear: both;
+    height: 300px;
+    overflow: scroll;
+}
+#time {
+    width: 12%;
+    float: left;
+    padding: 0 2%;
+}
+#time li {
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+.timecolumn {
+    box-sizing: border-box;
+    width: 28%;
+    float: left;
+    border-right: 1px solid white; 
+}
+.timecolumn li {
+    height: 39px;
+    border-bottom: 1px solid white;
+    background: #d3d3d3; /* study.jsにも設定しているため、変更の際は両方を直す必要あり。 */
+    line-height: 39px;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.pageBar {
+    margin: 15px 0;
+    padding: 4px 0;
+    width: 100%;
+    height: 18px;
+    text-align: center;
+    font-size: 15px;
+    background: #8c8c8c;
+    color: white;
+    font-weight: 400;
+    line-height: 18px;
+}
+#prev {
+    margin-right: 10px;
+}
+#next {
+    margin-left: 10px;
+}
+.page {
+    padding: 0 10px;
+}
+.clickable {
+    cursor: pointer;
+}
+.unclickable {
+    cursor: default;
+    color: #696969;
+}
+.abbr {
+    padding: 0;
+}
+#confReserve {
+    display: none;
+    position: fixed;
+    top: 50px;
+    margin: 0 10px;
+    width: 280px;
+    padding: 10px;
+    background: white;
+    z-index: 2;
+}
+#confReserve p {
+    margin-bottom: 5px;
+}
+#confReserve span {
+    color: #0070c9;
+}
+#confReserveAns {
+    margin: 0;
+    text-align: center;
+}
+#confReserveYes {
+    margin-left: 40px;
+    padding: 10px;
+}
+#confReserveNo {
+    margin-right: 40px;
+    padding: 10px;
+}

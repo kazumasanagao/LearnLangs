@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" contant="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/stylesheets/menu.css" />
+        <link rel="stylesheet" href="/stylesheets/home.css" />
+        <link rel="stylesheets" href="/stylesheets/home_pc.css" media="screen and (min-width:800px)" />
+    </head>
+    <body>
+        <div id="menuBar">
+            <a id="chample" href="/">Chample</a>
+            <a id="login" href="/login">ログイン</a>
+            <div id="menuButton"><img src="/images/menu.png" width="26" height="26" /></div>
+        </div>
+        <div id="menu">
+            <div class="menuEach" id="userinfo">ユーザー情報</div>
+            <div class="menuEach" id="changepass">パスワードの変更</div>
+            <div class="menuEach" id="logout">ログアウト</div>
+        </div>
+
+        <p id="welcome"><%= nickname %>さん、ようこそ！</p>
+        
+        <div id="stButtonsFrame">
+            <div id="study">学ぶ<br ><span>講師を検索する</span></div>
+            <div id="teach">教える<br /><span>空き時間を登録する</span></div>
+        </div>
+        <!--
+        <div class="lessons">
+            <p class="lessons_head">第１レッスン：<span class="youare_student">あなたは生徒です</span></p>
+            <img src="/images/nophoto.png" width="80" height="80"/>
+            <div class="lessons_rightpart">
+                <p>講師: Kazumasa</p>
+                <p>言語: English</p>
+                <p>出身: Japan</p>
+            </div>
+            <div class="lessons_belowpart">
+                <p>日時: 25(土) 12:00 ~ 12:25</p>
+                <p>Skype ID: <span class="selectable lessons_skypeid">kakarotto1</span><span class="lessons_copyid">IDをコピーする</span></p>
+                <a href="skype:skyline8940?call"><div class="lessons_call">講師にコールする</div></a>
+                <p class="lessons_cancel">レッスンをキャンセルする</p>
+            </div>
+        </div>
+        -->
+        <div id="lessonsFrame"></div>
+        
+        <div id="data" style="display:none;"><%= data %></div>
+
+        <div id="toast"></div>
+        <div id="graylayer"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/javascripts/conf.js"></script>
+    <script src="/javascripts/menu.js"></script>
+    <script src="/javascripts/home.js"></script>
+    </body>
+</html>

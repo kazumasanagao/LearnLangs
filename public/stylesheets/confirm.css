@@ -1,0 +1,31 @@
+p {
+    margin: 30px 0 0 10px;
+}
+#confirmCode {
+    height: 30px;
+    font-size: 18px;
+    width: 300px;
+    margin: 15px 0 0 10px;
+    border: gray 1px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#sendCode {
+    height: 40px;
+    font-size: 18px;
+    width: 300px;
+    margin: 15px 0 25px 10px;
+    text-align: center;
+    background: #28b9e6;
+    color: white;
+    font-weight: 400;
+    line-height: 40px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+#missinput {
+    display: none;
+    color: red;
+    font-size: 15px;
+    margin: 15px 0 0 10px;
+}

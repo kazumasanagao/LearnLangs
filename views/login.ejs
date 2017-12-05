@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" contant="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="/stylesheets/menu.css" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/stylesheets/signin.css" /><!-- cssはsigninと同じなので共有する -->
+        <link rel="stylesheets" href="/stylesheets/signin_pc.css" media="screen and (min-width:800px)" />
+    </head>
+    <body>
+        <div id="menuBar">
+            <a id="chample" href="/">Chample</a>
+            <a id="login" href="/login">ログイン</a>
+        </div>
+
+        <h1>ログイン</h1>
+        <h2>メールアドレスでログイン</h2>
+        <input id="mail" type="email" placeholder="メールアドレス" /><br />
+        <input id="pass" type="password" placeholder="パスワード" /><br />
+        <p id="missinput"></p>
+        <a id="forgetpass" href="/forgetpass">パスワードをお忘れの方</a><br />
+        <input type="checkbox" id="keeplogin" class="keeplogin" name="keeplogin"/><label class="keepLoginLabel" for="keeplogin">ログインしたままにする</label>
+        <div id="sendMail">ログイン</div>
+
+        <h2>他サービスのIDでログイン</h2>
+        <div id="facebook"><img src="/images/FB-f-Logo__blue_29.png" /><span>Facebookアカウントでログイン</span></div>
+        <div id="twitter"><img src="/images/Twitter_Logo_White_On_Blue.png" /><span>Twitterアカウントでログイン</span></div>
+        <input type="checkbox" id="keeplogin1" class="keeplogin" name="keeplogin1"/><label class="keepLoginLabel" for="keeplogin1">ログインしたままにする</label>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/javascripts/conf.js"></script>
+    <script src="/javascripts/login.js"></script>
+    <script src="/javascripts/facebook.js"></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+#menuBar {
+    height: 40px;
+    background: black;
+}
+
+#chample  {
+    position: absolute;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+}
+#login {
+    color: white;
+    position: absolute;
+    right: 50px;
+    font-size: 13px;
+    line-height: 40px;
+    font-weight: 400;
+}
+#menuButton {
+    position: absolute;
+    right: 3px;
+    height: 33px;
+    width: 33px;
+    padding: 7px 0 0 7px;
+}
+#menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 200px;
+    background: white;
+    z-index: 2;
+}
+.menuEach {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10px;
+    border-bottom: 1px solid gray;
+}
+

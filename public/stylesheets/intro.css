@@ -1,0 +1,43 @@
+#coverRap {
+    background: url("/images/cover.jpg");
+    background-size: cover;
+    background-position: top center;
+    height: 310px;
+}
+h1,#oneTeach {
+    text-align: center;
+    width: 100%;
+    padding-top: 220px;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: white 1px 1px 0px, white -1px 1px 0px,white 1px -1px 0px, white -1px -1px 0px;
+}
+#oneTeach {
+    padding-top: 5px;
+}
+h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    padding-top: 30px;
+    font-weight: 400;   
+}
+#signinButton {
+    text-align: center;
+    width: 80%;
+    margin: 10px auto 0;
+    background: #28b9e6;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 400;
+    opacity: 0.8;
+}
+p {
+    text-align: center;
+    padding-top: 20px;
+}
+

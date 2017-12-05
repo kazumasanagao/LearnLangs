@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" contant="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="robots" content="noindex"><!-- インデックス不要 -->
+        <link rel="stylesheet" href="/stylesheets/menu.css" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/stylesheets/confirm.css" />
+        <link rel="stylesheets" href="/stylesheets/confirm_pc.css" media="screen and (min-width:800px)" />
+    </head>
+    <body>
+        <div id="menuBar">
+            <a id="chample" href="/">Chample</a>
+            <a id="login" href="/login">ログイン</a>
+        </div>
+
+        <p>メールを送信しました。<br>こちらに認証コードをご入力ください。</p>
+        <input id="confirmCode" placeholder="認証コード"></input>
+        <p id="missinput"></p>
+        <div id="sendCode">送信</div>
+
+        <div id="pagetype" style="display:none;"><%= type %></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/javascripts/conf.js"></script>
+    <script src="/javascripts/confirm.js"></script>
+    </body>
+</html>

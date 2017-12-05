@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" contant="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/stylesheets/menu.css" />
+        <link rel="stylesheet" href="/stylesheets/userinfo.css" />
+        <link rel="stylesheets" href="/stylesheets/userinfo_pc.css" media="screen and (min-width:800px)" />
+    </head>
+    <body>
+        <div id="menuBar">
+            <a id="chample" href="/">Chample</a>
+            <a id="login" href="/login">ログイン</a>
+        </div>
+
+        <h1>ユーザー情報</h1>
+        
+        <p class="head">ニックネーム<span class="requires">*</span></p>
+        <input id="nickname" name="nickname" maxlength="12" placeholder="半角英字のみ(12字以内)" />
+        <p id="nicknameMiss">半角英字のみ、12字以内です。</p>
+
+        <p class="head">SkypeID<span class="requires">*</span><a id="aboutskypeid" href="">SkypeIDについて</a></p>
+        <input id="skypeid" name="skypeid" maxlength="32" placeholder="半角英数(6~32字)" />
+        <p id="skypeidMiss">半角英数6~32字です。</p>
+
+        <p class="head">出身国<span class="requires">*</span></p>
+        <select id="country_select" name="country"></select>
+
+        <p class="head">母語（教えることのできる言語）<span class="requires">*</span></p>
+        <div id="langSelects"><select id="language_select1" class="language_selects" name="language1"></select><br></div>
+        <p id="addLang">+ 母語の追加</p>
+
+        <p class="head">性別<span class="requires">*</span></p>
+        <div id="gender">
+            <input type="radio" name="gender" id="fe" value="fe" checked="checked"><label for="fe" class="genderText">女性</label>
+            <input type="radio" name="gender" id="ma" value="ma"><label for="ma" class="genderText">男性</label>
+        </div>
+
+        <p class="head">タイムゾーン<span class="requires">*</span>
+            <span id="currentTimeText">現在の時刻</span>
+            <span id="currentTime"></span></p>
+        <select id="timezone_select" name="timezone"></select><br />
+        <input type="checkbox" id="summertime" name="summertime"/><label id="summertimeLabel" for="summertime">サマータイム +1h</label>
+
+        <p class="head">メールアドレス<span class="requires">*</span></p>
+        <span id="mail"></span><a id="changeMail" href="/changemail">変更</a>
+
+        <p class="head"><span>自己紹介文</span><span id="introCounter"></span></p>
+        <textarea id="intro" name="intro" rows="6"></textarea><br>
+
+        <p class="head">
+        <span>プロフィール画像</span>
+        <label for="inputFile" class="file"> 
+            <span id="changePhoto">変更</span>
+            <input type="file" id="inputFile" accept=".png,.jpg,.jpeg" onchange="preview(this)" />
+        </label>
+        </p>
+        <div id="photoFrame"><canvas id="image_preview" width="100" height="100"></canvas></div>
+        <canvas id="fbphoto" style="display:none;" width="100" height="100"></canvas>
+
+        <div id="sendInfo">保存</div>
+
+        <div id="toast"></div>
+
+        <div style="display:none;" id="r_nickname"><%= nickname %></div>
+        <div style="display:none;" id="r_skypeid"><%= skypeid %></div>
+        <div style="display:none;" id="r_country"><%= country %></div>
+        <div style="display:none;" id="r_languages"><%= languages %></div>
+        <div style="display:none;" id="r_gender"><%= gender %></div>
+        <div style="display:none;" id="r_timezone"><%= timezone %></div>
+        <div style="display:none;" id="r_summertime"><%= summertime %></div>
+        <div style="display:none;" id="r_mail"><%= mail %></div>
+        <div style="display:none;" id="r_fbphoto"><%= fbphoto %></div>
+        <div style="display:none;" id="r_intro"><%= intro %></div>
+        <div style="display:none;" id="r_id"><%= id %></div>
+        <div style="display:none;" id="serverDate"><%= date %></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/javascripts/conf.js"></script>
+    <script src="/javascripts/pulldowns.js"></script>
+    <script src="/javascripts/load_image.js"></script>
+    <script src="/javascripts/userinfo.js"></script>
+    </body>
+</html>

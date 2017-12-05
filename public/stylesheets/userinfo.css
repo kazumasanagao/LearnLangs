@@ -1,0 +1,111 @@
+h1 {
+    margin: 20px 0 0 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.head {
+    margin: 20px 0 0 10px;
+    font-size: 15px;
+}
+.requires {
+    font-size: 18px;
+    color: red;
+    margin-left: 2px;
+}
+#nickname, #skypeid {
+    height: 30px;
+    font-size: 18px;
+    width: 300px;
+    margin: 2px 0 0 10px;
+    border: gray 1px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#nicknameMiss, #skypeidMiss {
+    display: none;
+    color: red;
+    margin-left: 10px;
+    font-size: 15px;
+}
+#country_select, .language_selects, #timezone_select {
+    margin: 2px 0 0 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 30px;
+    line-height: 20px;
+    width: 300px;
+    border: gray 1px solid;
+    background: white;
+}
+.language_selects {
+    margin-bottom: 5px;
+}
+#addLang {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #0070c9;
+}
+#gender {
+    margin: 2px 0 0 10px;
+}
+#ma {
+    margin-left: 20px;
+}
+#currentTimeText {
+    margin-left: 5px;
+    font-size: 13px;
+}
+#currentTime {
+    margin-left: 5px;
+    font-size: 13px;
+}
+#summertime {
+    margin: 10px 0 0 10px;
+}
+#summertimeLabel {
+    font-size: 13px;
+    padding-left: 2px;
+    /* checkboxと高さがずれるので微調整 */
+    position: relative;
+    top: -2px;
+}
+#mail {
+    margin-left: 10px;
+    font-size: 18px;
+}
+#changeMail,#changePhoto,#aboutskypeid {
+    margin-left: 5px;
+    font-size: 13px;
+    color: #0070c9;
+}
+#intro {
+    font-size: 14px;
+    width: 300px;
+    margin: 2px 0 0 10px;
+    border: gray 1px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#introCounter {
+    margin-left: 5px;
+    font-size: 14px;
+}
+#photoFrame {
+    margin: 2px 0 0 10px;
+}
+#inputFile {
+    display: none;
+}
+#sendInfo {
+    height: 40px;
+    font-size: 18px;
+    width: 300px;
+    margin: 25px 0 25px 10px;
+    text-align: center;
+    background: #28b9e6;
+    color: white;
+    font-weight: 400;
+    line-height: 40px;
+    border-radius: 10px;
+    opacity: 0.8;
+}

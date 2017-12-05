@@ -1,0 +1,87 @@
+h1 {
+    margin: 20px 0 0 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+h2 {
+    margin: 10px 0 0 10px;
+    font-size: 20px;
+}
+#mail,#pass,#pass2 {
+    height: 30px;
+    font-size: 18px;
+    width: 300px;
+    margin: 15px 0 0 10px;
+    border: gray 1px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#missinput {
+    display: none;
+    color: red;
+    font-size: 15px;
+    margin: 15px 0 0 10px;
+}
+#sendMail {
+    height: 40px;
+    font-size: 18px;
+    width: 300px;
+    margin: 15px 0 25px 10px;
+    text-align: center;
+    background: #28b9e6;
+    color: white;
+    font-weight: 400;
+    line-height: 40px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+#facebook, #twitter {
+    position: relative;
+    height: 39px;
+    line-height: 39px;
+    font-size: 17px;
+    margin: 15px 0 0 10px;
+    border: gray 1px solid;
+    border-radius: 5px;
+    width: 300px;
+}
+#facebook img, #twitter img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 29px;
+    height: 29px;
+}
+#facebook span, #twitter span {
+    margin-left: 44px;
+}
+
+/* login.ejs */
+.keeplogin {
+    margin: 10px 5px 0 10px;
+}
+.keepLoginLabel {
+    font-size: 16px;
+}
+#forgetpass {
+    display: inline-block;
+    font-size: 12px;
+    color: #0070c9;
+    margin: 10px 0 0 10px;
+}
+
+/* changemail.ejs */
+#oldmailhead {
+    font-size: 16px;
+    margin: 15px 0 0 10px;
+}
+#oldmail {
+    font-size: 16px;
+    margin: 3px 0 0 10px;
+}
+
+/* nopass.ejs */
+#nopassmes {
+    font-size: 16px;
+    margin: 10px 10px 0 10px;
+}
